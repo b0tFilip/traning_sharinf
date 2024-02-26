@@ -1,0 +1,77 @@
+.headerContainer {
+    height: 7vh;
+    width: 100%;
+
+    display: flex;
+    box-shadow: 19px 19px 38px #cccccc;
+}
+
+.NavBar {
+    height: 7vh;
+    position: absolute;
+    width: 45%;
+    left: 55%;
+}
+
+.light {
+    background: var(--bgLight);
+}
+
+.dark {
+    background: var(--bgDark);
+}
+
+.buttonContainer {
+    height: calc(105% + 1px);
+    width: 15vw;
+    transform: translateY(-75%);
+    --border-color: rgba(0, 0, 0, 0.2);
+
+    /*border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);*/
+}
+
+.light.buttonContainer:active {
+    background: rgb(230, 230, 230);
+}
+
+.dark.buttonContainer:active {
+    background: rgb(33, 33, 33);
+}
+
+.activeIcon {
+    height: calc(100%);
+    background: linear-gradient(0deg,
+            rgba(2, 0, 36, 0.15) 0%,
+            rgba(255, 255, 255, 0) 75%);
+    width: 100%;
+    transform: translateY(70%);
+    border: 0;
+}
+
+.buttonText {
+    font-size: calc(2vh);
+    background: rgba(0, 0, 0, 0);
+    /*transform: translateY(1.5vh);*/
+}
+
+.buttonText.light {
+    color: black;
+}
+
+.buttonContainer.dar {
+    color: white;
+}
+
+.Logo {
+    width: 6%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left:1%;
+}
+
+.LogoLetter {
+    font-size: calc(130%);
+    font-weight: bold;
+}
